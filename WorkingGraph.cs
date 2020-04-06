@@ -29,6 +29,22 @@ namespace AlgoritmLab5
         {
             AdjacencyMatrix = matrix;
         }
+        /// <summary>
+        /// Возвращает список циклов (цикл представлен как список из вершин) для данной конкретной вершины.
+        /// </summary>
+        /// <param name="vertexNumber">Вершина, для которой нужно найти циклы</param>
+        /// <returns></returns>
+        public List<List<int>> GetCycles(int vertexNumber)
+        {
+            if (vertexNumber >= VertexCount || vertexNumber < 0)
+            {
+                return null;
+            }
+
+            List<List<int>> toReturn = new List<List<int>>();
+
+
+        }
 
     }
 }
