@@ -77,7 +77,7 @@ namespace AlgoritmLab5
                     if (i == vertexNumber && currentCycle.Count > 2)
                     {
                         currentCycle.Add(i);
-                        cyclesList.Add(currentCycle);
+                        cyclesList.Add(currentCycle.GetRange(0, currentCycle.Count));
                         currentCycle.RemoveAt(currentCycle.Count - 1);
                     }
                     // если цикл не замкнут, но вершина i еще не была посещена

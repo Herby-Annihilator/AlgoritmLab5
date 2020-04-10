@@ -60,15 +60,17 @@ namespace AlgoritmLab5
                     //
                     case 'e':
                         {
-                            if (workingGraph == null)
+                            if (workingGraph == null || workingGraph.VertexCount == 0)
                             {
                                 Console.WriteLine("\nГраф еще не создан. Нажмите что-нибудь...");
                                 Console.ReadKey(true);
                             }
                             else
                             {
+                                Console.WriteLine();
                                 workingGraph.Print(Console.Out);
                                 Console.WriteLine("\nНажмите что-нибудь...");
+                                Console.ReadKey(true);
                             }
                             break;
                         }
@@ -77,7 +79,7 @@ namespace AlgoritmLab5
                     //
                     case 'r':
                         {
-                            if (workingGraph == null)
+                            if (workingGraph == null || workingGraph.VertexCount == 0)
                             {
                                 Console.WriteLine("\nГраф еще не создан.");
                                 Console.WriteLine("Нажмите что-нибудь...");
@@ -97,7 +99,12 @@ namespace AlgoritmLab5
                                 {
                                     for (int j = 0; j < cycles.Count; j++)
                                     {
-                                        Console.WriteLine("\tЦикл " + j + ":\t" + cycles[j].ToString());
+                                        Console.Write("\tЦикл " + j + ":\t");
+                                        for (int k = 0; k < cycles[j].Count; k++)
+                                        {
+                                            Console.Write(cycles[j][k] + " ");
+                                        }
+                                        Console.WriteLine();
                                     }
                                 }
                             }
