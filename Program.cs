@@ -29,7 +29,20 @@ namespace AlgoritmLab5
                     //
                     case 'q':
                         {
-
+                            try
+                            {
+                                workingGraph = new WorkingGraph(GraphHelper.GetMatrixFromFile("input.dat"));
+                                Console.WriteLine("Граф успешно восстановлен");
+                                Console.WriteLine("Нажмите что-нибудь...");
+                                Console.ReadKey(true);
+                            }
+                            catch(Exception e)
+                            {
+                                Console.WriteLine("\n" + e.Message);
+                                Console.WriteLine("Нажмите что-нибудь...");
+                                Console.ReadKey(true);
+                                break;
+                            }
                             break;
                         }
                     //
@@ -37,7 +50,9 @@ namespace AlgoritmLab5
                     //
                     case 'w':
                         {
-
+                            Console.WriteLine("Разработчик лентяй!");
+                            Console.WriteLine("Нажмите что-нибудь...");
+                            Console.ReadKey(true);
                             break;
                         }
                     //
@@ -62,7 +77,33 @@ namespace AlgoritmLab5
                     //
                     case 'r':
                         {
+                            if (workingGraph == null)
+                            {
+                                Console.WriteLine("\nГраф еще не создан.");
+                                Console.WriteLine("Нажмите что-нибудь...");
+                                Console.ReadKey(true);
+                                break;
+                            }
+                            List<List<int>> cycles;
+                            for (int i = 0; i < workingGraph.VertexCount; i++)
+                            {
+                                cycles = workingGraph.GetCycles(i);
+                                Console.WriteLine("\nЦиклы для вершины " + i);
+                                if (cycles.Count == 0)
+                                {
+                                    Console.WriteLine("\tДля данной вершины нет циклов");
+                                }
+                                else
+                                {
+                                    for (int j = 0; j < cycles.Count; j++)
+                                    {
+                                        Console.WriteLine("\tЦикл " + j + ":\t" + cycles[j].ToString());
+                                    }
+                                }
+                            }
 
+                            Console.WriteLine("\nНажмите что-нибудь...");
+                            Console.ReadKey(true);
                             break;
                         }
                     //

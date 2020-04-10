@@ -1,0 +1,10 @@
+C:\VS_Projects\AlgoritmLab5\bin\Debug\AlgoritmLab5.exe.config
+C:\VS_Projects\AlgoritmLab5\bin\Debug\AlgoritmLab5.exe
+C:\VS_Projects\AlgoritmLab5\bin\Debug\AlgoritmLab5.pdb
+C:\VS_Projects\AlgoritmLab5\bin\Debug\LibraryForAlgLab.dll
+C:\VS_Projects\AlgoritmLab5\bin\Debug\LibraryForAlgLab.pdb
+C:\VS_Projects\AlgoritmLab5\obj\Debug\AlgoritmLab5.csprojAssemblyReference.cache
+C:\VS_Projects\AlgoritmLab5\obj\Debug\AlgoritmLab5.csproj.CoreCompileInputs.cache
+C:\VS_Projects\AlgoritmLab5\obj\Debug\AlgoritmLab5.csproj.CopyComplete
+C:\VS_Projects\AlgoritmLab5\obj\Debug\AlgoritmLab5.exe
+C:\VS_Projects\AlgoritmLab5\obj\Debug\AlgoritmLab5.pdb
