@@ -46,6 +46,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AlgoritmLab6\OOPModel\Edge.cs" />
+    <Compile Include="AlgoritmLab6\OOPModel\MBGraph.cs" />
+    <Compile Include="AlgoritmLab6\OOPModel\MilitaryBase.cs" />
+    <Compile Include="AlgoritmLab6\Region.cs" />
     <Compile Include="Graph.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
